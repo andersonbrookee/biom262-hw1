@@ -17,3 +17,16 @@ awk '{if ($3=="transcript") print}' data/gencode.v19.annotation.chr22.gtf > genc
 module load biotools
 bedtools flank -i gencode.v19.annotation.chr22.transcript.gtf -g data/hg19.genome -l 2000 -r 0 -s > gencode.v19.annotation.chr22.transcript.promoter.gtf
 
+#exercise  4
+module load biotools
+bedtools intersect -a gencode.v19.annotation.chr22.transcript.promoter.gtf \
+                             -b tf.nfkb.bed > gencode.v19.annotation.chr22.transcript.promoter.nfkb.gtf
+#exercise 5
+module load biotools
+bedtools getfasta -s -fi GRCh37.p13.chr22.fa -bed gencode.v19.annotation.chr22.transcript.promoter.nfkb.gtf -fo gencode.v19.annotation.chr22.transcript.promoter.nfkb.fasta
+
+#exercise 6
+grep -Ff gencode.v19.annotation.chr22.transcript.promoter.nfkb.fasta nfkb_11mer.txt | wc -l
+grep -v ^\> gencode.v19.annotation.chr22.transcript.promoter.nfkb.fasta  | wc -l
+grep -v ^\> nfkb_11mer.txt | wc -l
+
