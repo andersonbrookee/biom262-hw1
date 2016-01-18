@@ -31,3 +31,4 @@ grep -v ^\> gencode.v19.annotation.chr22.transcript.promoter.nfkb.fasta  | wc -l
 grep -v ^\> nfkb_11mer.txt | wc -l
 
 echo "Hello I am a message in standard out (stdout)"
+echo "Hello I am a message in standard error (stderr)" >&2
