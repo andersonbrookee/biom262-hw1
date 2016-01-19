@@ -1,0 +1,7 @@
+Could not open a connection to your authentication agent.
+Could not open a connection to your authentication agent.
+awk: (FILENAME=gencode.v19.annotation.chr22.transcript.gtf FNR=43) fatal: print to "standard output" failed (Broken pipe)
+awk: (FILENAME=gencode.v19.annotation.chr22.transcript.promoter.gtf FNR=21) fatal: print to "standard output" failed (Broken pipe)
+awk: (FILENAME=gencode.v19.annotation.chr22.transcript.promoter.nfkb.gtf FNR=73) fatal: print to "standard output" failed (Broken pipe)
+awk: (FILENAME=gencode.v19.annotation.chr22.transcript.promoter.nfkb.fasta FNR=84) fatal: print to "standard output" failed (Broken pipe)
+Could not open a connection to your authentication agent.
